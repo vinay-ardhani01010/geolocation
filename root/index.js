@@ -5,7 +5,8 @@ app.set('trust proxy',true)
 const port  = 4000
 var ip = 0;
 app.get('/',(req,res)=>{
-  var ip = req.ip;
+  res.end('hello world');
+  
 })
 fetch('http://www.geoplugin.net/json.gp/')
   .then(response => response.json())
